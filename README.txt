@@ -44,3 +44,8 @@ Eksportuj kopię po każdym cyklu. Usunięcie danych Safari, tryb prywatny lub
 zmiana adresu aplikacji mogą spowodować utratę dostępu do projektów.
 Nie wykonuj pomiaru w dwóch kartach naraz. Blokada wygaszania ekranu zależy
 od systemu. W razie potrzeby ustaw ręcznie dłuższą autoblokadę iPhone'a.
+
+WERSJA 1.1 — OneDrive
+Wgraj index.html i sw.js do istniejącego repozytorium (pozostałe pliki bez zmian). Nie usuwaj aplikacji z iPhone ani danych Safari. Po aktualizacji otwórz aplikację online, zamknij i ponownie otwórz. Na liście projektów powinna pojawić się sekcja Kopie zapasowe v1.1.
+Microsoft Entra: client ID 9da3874b-41a5-44ca-bed9-66adabcaa65f; platforma SPA; redirect https://jwierzchowsky.github.io/pomiary-ruchu/; Microsoft Graph delegated Files.ReadWrite.AppFolder. Bez client secret.
+Połącz OneDrive przed pomiarem, utwórz testowy projekt, wyślij kopię, sprawdź folder Apps/Pomiary ruchu i odzyskaj kopię. Automatyczny zapis co minutę podczas aktywności aplikacji; offline pozostają dane lokalne. Sesja może wymagać ponownego logowania, zwłaszcza po zamknięciu aplikacji. Kopie godzin zapisują pierwszy zakończony stan; korekty trafiają do aktualnej kopii. Odzyskiwanie nie nadpisuje istniejących projektów. Funkcja Pliki/iCloud otwiera systemowy panel udostępniania lub pobiera JSON. IndexedDB stanowi dodatkową kopię lokalną, nie niezależną od usunięcia danych witryny.
